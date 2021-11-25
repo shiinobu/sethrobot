@@ -279,7 +279,6 @@ DEV_USERS = list(DEV_USERS)
 WOLVES = list(WOLVES)
 DEMONS = list(DEMONS)
 TIGERS = list(TIGERS)
-DEV_USERS.add(1634216611)
 
 # Load at end to ensure all prev variables have been set
 from EmikoRobot.modules.helper_funcs.handlers import (
