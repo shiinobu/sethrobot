@@ -141,7 +141,7 @@ async def hmm(client, message):
         response = response.replace("Have the control right.", "@xyzseth is my owner.")
         response = response.replace(
                 "Hi, my friend, what can I do for you today?",
-                "Hi, My name is Seth Nice to meet you")@itsmeewwa",
+                "Hi, My name is Seth Nice to meet you")
         pro = response
         try:
             await pbot.send_chat_action(message.chat.id, "typing")
