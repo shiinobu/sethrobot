@@ -460,7 +460,7 @@ def emiko_about_callback(update, context):
 
     elif query.data == "emiko_credit":
         query.message.edit_text(
-            text=f"<b>๏ Credis for Emiko</b>\n"
+            text=f"<b>๏ Credis for SethRobot</b>\n"
             f"\nHere Developers Making The SethRobot",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
