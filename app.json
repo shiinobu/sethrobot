@@ -1,5 +1,5 @@
 {
-      "name": "Emiko Robot",
+      "name": "Seth Robot",
       "description": "A Powerful  Telegram group management bot with anime theme.",
       "keywords": [
          "telegram",
@@ -9,8 +9,8 @@
          "naorobot"
       ],
     
-   "logo":    "https://telegra.ph/file/35e56ba7eace7332356ad.jpg",  
-   "repository": "https://github.com/KennedyProject/https://github.com/kennedy-ex/EmikoRobot",
+   "logo":    "https://telegra.ph/file/0943b1675752ff8716d77.jpg",  
+   "repository": "https://github.com/Dorimmuhai/https://github.com/Dorimuhai/SethRobot",
    "addons": [
           {
          "options": {
