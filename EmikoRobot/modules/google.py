@@ -287,7 +287,7 @@ __help__ = """
 ❂ /github <username>*:* Get information about a GitHub user.
 ❂ /country <country name>*:* Gathering info about given country
 ❂ /imdb <Movie name>*:* Get full info about a movie with imdb.com
-❂ Seth <query>*:* Emiko answers the query
+❂ Seth <query>*:* Seth answers the query
 
   💡Ex: `Seth where is Japan?`
 """
