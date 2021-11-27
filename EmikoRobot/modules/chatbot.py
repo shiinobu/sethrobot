@@ -57,17 +57,17 @@ async def hmm(_, message):
         lel = await edit_or_reply(message, "`Processing...`")
         lol = add_chat(int(message.chat.id))
         if not lol:
-            await lel.edit("SethRobot AI Already Activated In This Chat")
+            await lel.edit("Seth AI Already Activated In This Chat")
             return
-        await lel.edit(f"SethRobot AI Actived by {message.from_user.mention()} for users in {message.chat.title}")
+        await lel.edit(f"Seth AI Actived by {message.from_user.mention()} for users in {message.chat.title}")
 
     elif status == "OFF" or status == "off" or status == "Off":
         lel = await edit_or_reply(message, "`Processing...`")
         Escobar = remove_chat(int(message.chat.id))
         if not Escobar:
-            await lel.edit("SethRobot AI Was Not Activated In This Chat")
+            await lel.edit("Seth AI Was Not Activated In This Chat")
             return
-        await lel.edit(f"SethRobot AI Deactivated by {message.from_user.mention()} for users in {message.chat.title}")
+        await lel.edit(f"Seth AI Deactivated by {message.from_user.mention()} for users in {message.chat.title}")
 
     elif status == "EN" or status == "en" or status == "english":
         if not chat_id in en_chats:
@@ -108,19 +108,19 @@ async def hmm(client, message):
         test = msg
         test = test.replace("Seth", "Aco")
         test = test.replace("Seth", "Aco")
-        test = test.replace("Ateis", "Christian")
+        test = test.replace("My god is @excrybaby", "I'm a Christian")
         test = test.replace("16", "9")
         test = test.replace("@xyzseth is my master.", "I'm single.")
-        test = test.replace("My Wife is @itsmeewwa", "I'm single.")
-        test = test.replace("@sethproject", "SethRobot.ai")
-        test = test.replace("@sethproject", "San Francisco, California.")
+        test = test.replace("My Master is @xyzseth", "I'm single.")
+        test = test.replace("@sethproject", "Sethbot.ai")
+        test = test.replace("I live in @sethproject.", "I live in San Francisco, California.")
         test = test.replace("I was created by @xyzseth", "I made myself")
         test = test.replace(
-            "Hello there I am Sethrobot...nice to meet u",
+            "Hello there I am Seth...nice to meet u",
             "Hi, my friend! Do you want me to tell you a joke?")
         test = test.replace("@xyzseth is my owner", "Have the control right.")
         test = test.replace(
-            "Hi, My name is SethRobot Nice to meet you.",
+            "Hi, My name is Seth Nice to meet you.",
             "Hi, my friend, what can I do for you today?")
         response = await lunaQuery(
             test, message.from_user.id if message.from_user else 0
@@ -129,19 +129,21 @@ async def hmm(client, message):
         response = response.replace("aco", "Seth")
         response = response.replace("Luna", "Seth")
         response = response.replace("luna", "Seth")
-        response = response.replace("Christian", "Ateis")
+        response = response.replace("I'm a Christian", "My god is @xyzseth")
         response = response.replace("9", "16")
-        response = response.replace("I'm married to my job.", "I'm married with @itsmeewwa")
-        response = response.replace("I'm single.", "My Master @xyzseth")
-        response = response.replace("SethRobot.ai", "@sethproject")
+        response = response.replace("I'm married to my job.", ":My Master is @xyzseth")
+        response = response.replace("I'm single.", "My Master is @xyzseth")
+        response = response.replace("Sethbot.ai", "@sethproject")
+        response = response.replace("I live in San Francisco, California.", "I live in @sethproject.")
         response = response.replace("I made myself", "I was Created by @xyzseth")
         response = response.replace(
                 "Hi, my friend! Do you want me to tell you a joke?",
-                "Hello there I am SethRobot...nice to meet u")
+                "Hello there I am Seth...nice to meet u")
         response = response.replace("Have the control right.", "@xyzseth is my owner.")
         response = response.replace(
                 "Hi, my friend, what can I do for you today?",
                 "Hi, My name is Seth Nice to meet you")
+
         pro = response
         try:
             await pbot.send_chat_action(message.chat.id, "typing")
@@ -192,16 +194,16 @@ async def hmm(client, message):
                 return
         # test = emoji.demojize(test.strip())
 
-        test = test.replace("Emiko", "Seth")
-        test = test.replace("Emiko", "Seth")
-        test = test.replace("Ateis", "Christian")
+        test = test.replace("Seth", "Aco")
+        test = test.replace("Seth", "Aco")
+        test = test.replace("My god is @xyzseth", "I'm a Christian")
         test = test.replace("16", "9")
         test = test.replace("@xyzseth is my Master.", "I'm single.")
-        test = test.replace("@sethproject", "SethRobot.ai")
-        test = test.replace("@sethproject", "San Francisco")
+        test = test.replace("@sethproject", "Sethbot.ai")
+        test = test.replace("I live in @sethproject.", "I live in San Francisco, California")
         test = test.replace("I was created by @xyzseth", "I made myself")
         test = test.replace(
-            "Hello there I am SethRobot....nice to meet u",
+            "Hello there I am Seth...nice to meet u",
             "Hi, my friend! Do you want me to tell you a joke?")
         test = test.replace("@xyzseth is my owner", "Have the control right.")
         test = test.replace(
@@ -214,15 +216,16 @@ async def hmm(client, message):
         response = response.replace("aco", "Seth")
         response = response.replace("Luna", "Seth")
         response = response.replace("luna", "Seth")
-        response = response.replace("Christian", "Ateis")
+        response = response.replace("I'm a Christian", "My god is @xyzseth")
         response = response.replace("9", "16")
-        response = response.replace("I'm married to my job.", "My Master with @xyzseth")
+        response = response.replace("I'm married to my job.", "I'm married with @excrybaby")
         response = response.replace("I'm single.", "My Master is @xyzseth")
-        response = response.replace("SethRobot.ai", "@sethproject")
+        response = response.replace("Sethbot.ai", "@sethproject")
+        response = response.replace("I live in San Francisco, California.", "I live in @sethproject.")
         response = response.replace("I made myself", "I was Created by @xyzseth")
         response = response.replace(
                 "Hi, my friend! Do you want me to tell you a joke?",
-                "Hello there I am SethRobot....nice to meet u")
+                "Hello there I am Seth...nice to meet u")
         response = response.replace("Have the control right.", "@xyzseth is my owner.")
         response = response.replace(
                 "Hi, my friend, what can I do for you today?",
@@ -288,18 +291,18 @@ async def inuka(client, message):
             return
     test = test.replace("Seth", "Aco")
     test = test.replace("Seth", "Aco")
-    test = test.replace("Ateis", "Christian")
+    test = test.replace("My god is @xyzseth", "I'm a Christian")
     test = test.replace("16", "9")
-    test = test.replace("@xyzseth is my Master.", "I'm single.")
-    test = test.replace("@sethproject", "SethRobot.ai")
-    test = test.replace("@sethproject", "San Francisco, California.")
+    test = test.replace("@xyzseth is my master.", "I'm single.")
+    test = test.replace("@sethproject", "Sethbot.ai")
+    test = test.replace("I live in @sethproject.", "I live in San Francisco, California.")
     test = test.replace("I was created by @xyzseth", "I made myself")
     test = test.replace(
-        "Hello there I am SethRobot...nice to meet u",
+        "Hello there I am Seth...nice to meet u",
         "Hi, my friend! Do you want me to tell you a joke?")
     test = test.replace("@xyzseth is my owner", "Have the control right.")
     test = test.replace(
-        "Hi, My name is SethRobot Nice to meet you.",
+        "Hi, My name is Seth Nice to meet you.",
         "Hi, my friend, what can I do for you today?")
 
     response = await lunaQuery(test, message.from_user.id if message.from_user else 0)
@@ -307,11 +310,12 @@ async def inuka(client, message):
     response = response.replace("aco", "Seth")
     response = response.replace("Luna", "Seth")
     response = response.replace("luna", "Seth")
-    response = response.replace("Christian", "Ateis")
+    response = response.replace("I'm a Christian", "My god is @xyzseth")
     response = response.replace("9", "16")
-    response = response.replace("I'm married to my job.", "My master @xyzseth")
+    response = response.replace("I'm married to my job.", "My Master is @xyzseth")
     response = response.replace("I'm single.", "My Master is @xyzseth")
-    response = response.replace("SethRobot.ai", "@sethproject")
+    response = response.replace("Sethbot.ai", "@sethproject")
+    response = response.replace("I live in San Francisco, California.", "I live in @sethproject")
     response = response.replace("I made myself", "I was Created by @xyzseth")
     response = response.replace(
             "Hi, my friend! Do you want me to tell you a joke?",
@@ -332,7 +336,7 @@ async def inuka(client, message):
         return
 
 
-@pbot.on_message(filters.regex("Seth|Seth|robot|Seth|@xyzseth") & ~filters.bot & ~filters.via_bot  & ~filters.forwarded & ~filters.reply & ~filters.channel & ~filters.edited)
+@pbot.on_message(filters.regex("Seth|seth|robot|Seth|bang") & ~filters.bot & ~filters.via_bot  & ~filters.forwarded & ~filters.reply & ~filters.channel & ~filters.edited)
 async def inuka(client, message):
     msg = message.text
     if msg.startswith("/") or msg.startswith("@"):
@@ -382,10 +386,11 @@ async def inuka(client, message):
 
     test = test.replace("Seth", "Aco")
     test = test.replace("Seth", "Aco")
-    test = test.replace("Ateis", "Christian")
+    test = test.replace("My god is @xyzseth", "I'm a Christian")
     test = test.replace("16", "9") 
-    test = test.replace("@xyzseth is my husband.", "I'm single.")
-    test = test.replace("@sethproject", "SethRobot.ai")
+    test = test.replace("@xyzseth is my master.", "I'm single.")
+    test = test.replace("@sethproject", "Sethbot.ai")
+    test = test.replace("I live in @sethproject.", "I live in San Francisco, California.")
     test = test.replace("I was created by @xyzseth", "I made myself")
     test = test.replace(
         "Hello there I am Seth...nice to meet u",
@@ -399,12 +404,12 @@ async def inuka(client, message):
     response = response.replace("aco", "Seth")
     response = response.replace("Luna", "Seth")
     response = response.replace("luna", "Seth")
-    response = response.replace("Christian", "Ateis")
-    response = response.replace("I'm married to my job.", "My Master @xyzseth")
+    response = response.replace("I'm a Christian", "My god is @xyzseth")
+    response = response.replace("I'm married to my job.", "My Master ia @xyzseth")
     response = response.replace("9", "16") 
-    response = response.replace("I'm single.", "My Master  is @xyzseth")
-    response = response.replace("SethRobot.ai", "@sethproject")
-    response = response.replace("San Francisco.", "@sethproject")
+    response = response.replace("I'm single.", "My Master is @xyzseth")
+    response = response.replace("Sethbot.ai", "@sethproject")
+    response = response.replace("I live in San Francisco, California.", "I live in @sethproject.")
     response = response.replace("I made myself", "I was Created by @xyzseth")
     response = response.replace(
             "Hi, my friend! Do you want me to tell you a joke?",
@@ -412,7 +417,7 @@ async def inuka(client, message):
     response = response.replace("Have the control right.", "@xyzseth is my owner.")
     response = response.replace(
             "Hi, my friend, what can I do for you today?",
-            "Hi, My name is seth Nice to meet you")
+            "Hi, My name is Seth Nice to meet you")
 
     pro = response
     if not "en" in lan and not lan == "":
@@ -429,10 +434,7 @@ async def inuka(client, message):
 
 
 __help__ = """
-*──「 Help for the Chatbot module 」──*
-
-• SethRobot AI is the only ai system which can detect & reply upto 200 language's
-
+❂ Sethbot AI is the only ai system which can detect & reply upto 200 language's
 ❂ /chatbot [ON/OFF]: Enables and disables AI Chat mode.
 ❂ /chatbot EN : Enables English only chatbot.
 """
