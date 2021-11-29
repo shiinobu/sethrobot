@@ -84,6 +84,7 @@ PM_START_TEXT = """
 *Hello {} !*
 ================================
 [✨](https://telegra.ph/file/8aeed82bd3b692cd14a77.jpg) ʜᴇʟʟᴏ  ᴍʏ ɴᴀᴍᴇ ɪs ꜱᴇᴛʜ ʀᴏʙᴏᴛ
+================================
 ɪ'ᴍ ᴀ ᴀɴɪᴍᴇ ᴛʜᴇᴍᴇ ʙᴏᴛ ꜰᴏʀ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀsɪʟʏ!
 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ [ꜱᴇᴛʜ★](https://t.me/xyzseth)
 ================================
@@ -229,7 +230,6 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
-                disable_web_page_preview=True,
             )
     else:
         update.effective_message.reply_text(
@@ -317,7 +317,6 @@ def help_button(update, context):
             query.message.edit_text(
                 text=text,
                 parse_mode=ParseMode.MARKDOWN,
-                disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                     [[InlineKeyboardButton(text="Go Back", callback_data="help_back")]]
                 ),
@@ -406,7 +405,6 @@ def emiko_about_callback(update, context):
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
-                disable_web_page_preview=True,
         )
 
     elif query.data == "emiko_admin":
@@ -492,7 +490,6 @@ def Source_about_callback(update, context):
             "\n\n๏ Command for all members."
             "\n • `/play` or `/ytp` <query> - Playing music via YouTube.",
             parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
@@ -512,7 +509,6 @@ def Source_about_callback(update, context):
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
-                disable_web_page_preview=True,
         )
 
 def get_help(update: Update, context: CallbackContext):
@@ -750,7 +746,6 @@ def donate(update: Update, context: CallbackContext):
                 user.id,
                 DONATE_STRING,
                 parse_mode=ParseMode.MARKDOWN,
-                disable_web_page_preview=True,
             )
 
             update.effective_message.reply_text(
