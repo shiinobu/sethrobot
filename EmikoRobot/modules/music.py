@@ -17,7 +17,7 @@ from youtubesearchpython import SearchVideos
 from EmikoRobot.utils.pluginhelper import get_text, progress
 from EmikoRobot import pbot, arq
 
-#async def lyrics_func(answers, text):
+async def lyrics_func(answers, text):
     song = await arq.lyrics(text)
     if not song.ok:
         answers.append(
