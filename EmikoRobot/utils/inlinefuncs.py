@@ -122,7 +122,7 @@ async def alive_function(answers):
     )
 
     msg = f"""
-**[Seth Robot ❤️](https://t.me/emikosupport):**
+**[Seth Robot ❤️](https://t.me/sethproject):**
 **MainBot:** `{bot_state}`
 **UserBot:** `{ubot_state}`
 **Python:** `{pyver.split()[0]}`
