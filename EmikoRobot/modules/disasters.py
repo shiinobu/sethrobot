@@ -3,7 +3,7 @@ import json
 import os
 from typing import Optional
 
-from NaoRobot import (
+from EmikoRobot import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -678,7 +678,7 @@ dispatcher.add_handler(SUPPORTLIST_HANDLER)
 dispatcher.add_handler(SUDOLIST_HANDLER)
 dispatcher.add_handler(DEVLIST_HANDLER)
 
-__mod_name__ = "Dev"
+__mod_name__ = "Disasters"
 __handlers__ = [
     SUDO_HANDLER,
     SUPPORT_HANDLER,
